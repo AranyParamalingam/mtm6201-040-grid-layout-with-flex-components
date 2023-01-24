@@ -5,6 +5,18 @@ body {
     color: #222;
   }
   
+  .emojis {
+    /*setting up grid layout*/
+    /*2 by 2 layout with 20px gap*/
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "smile beer"
+    "joy seed";
+    gap: 20px;
+  }
+
   .emoji {
     border: 1px solid #222;
     border-radius: 8px;
@@ -14,16 +26,34 @@ body {
   .emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
+
+    /*flex component - centered*/
+    display: flex;
+    justify-content: center;
+  }
+
+  .emoji p {
+    /*flex component - centered*/
+    display: flex;
+    
   }
   
+  /*button*/
   .emoji a {
+    /*flex component - centered*/
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
+
+    display: flex;
   }
   
+  /*emojis in the card*/
   .icon {
+    /*flex component - centered*/
     font-size: 4rem;
+    display: flex;
+    justify-content: center;
   }
